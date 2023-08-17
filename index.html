@@ -8,11 +8,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Borel&display=swap" rel="stylesheet">
     <script src="https://telegram.org/js/telegram-web-app.js"></script>
     <title>Title</title>
-    <style>@import url('https://fonts.googleapis.com/css2?family=Borel&display=swap');
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Borel&display=swap');
 
 
 nav{display: flex;
-    flex-direction: row;}
+    flex-direction: row;
+    flex-wrap: wrap;
+    }
 
 
 body{background-color: var(--tg-theme-secondary-bg-color)}
@@ -37,14 +40,22 @@ header{background-color: var(--tg-theme-secondary-bg-color);
        height: 100px;
        }
 
-.item{width: 400px;
-      height: 470px;
-      margin: 60px 40px;
+.item{width: 40%;
+      height: 70%;
+      margin: 10% 3% 5% 6%;
       background-color: var(--tg-theme-bg-color);
       float: left;
       text-align:center;
       Border-radius:15px;}
 
+
+.item2{width: 40%;
+    height: 70%;
+    margin: 13% 6% 5% 3%;
+    background-color: var(--tg-theme-bg-color);
+    float: left;
+    text-align:center;
+    Border-radius:15px;}
 
 
 .plus {width:20px;
@@ -64,7 +75,7 @@ header{background-color: var(--tg-theme-secondary-bg-color);
       }
 
 
-#p {width:30px;
+.p {width:30px;
     height:30px;
     margin:0px;
     font-size: 23px;
@@ -79,12 +90,11 @@ header{background-color: var(--tg-theme-secondary-bg-color);
       justify-content: space-around;
       flex-direction: row;
       flex-wrap: wrap;
-
       ;}
 
 
-#pps{width:180px;
-     height: 270px;}
+#pps{width:83%;
+     height: 40%;}
 
 
 #cart1{color: var(--tg-theme-button-text-color);
@@ -121,9 +131,9 @@ header{background-color: var(--tg-theme-secondary-bg-color);
         font-family: "Comic Sans MS", cursive, sans-serif;}
 
 
-#fnt{width: 230px;
-    height: 230px;
-    margin: 38px 0px 10px 0px;
+#fnt{width: 100%;
+    height: 54%;
+    margin: 21% 0px 5px 0px;
     border-radius: 10px;
     }
 
@@ -131,33 +141,47 @@ header{background-color: var(--tg-theme-secondary-bg-color);
 a {text-decoration: none;}
 
 
-.static{
+.static{display: flex;
         position: fixed;
-        vertical-align: text-bottom;
-        width: 90%;
-        height: 500px;
-        left: 10%
+        width: 100%;
+        height: auto;
         }
 
 
-
-#cartbtn{display: flex;
-         flex-direction: column;
-         flex-wrap: wrap;
+#cartbtn{position: fixed;
+         top: 93%;
+         text-align:center;
+         display: block;
+         
          background-color:var(--tg-theme-button-color);
          text-decoration:none;
+         align-content: center;
          width: 90%;
-         height: 10%;
-         padding: 10px 0px;
+         height: 6%;
+         float: left;
          color: var(--tg-theme-button-text-color);
          font-family: "Comic Sans MS", cursive, sans-serif;
          font-size: 35px;
          border-radius: 15px 15px;
-         text-align:center;
+         margin: 0px 5%;
          }
 
 
-.hidden{display: none !important;}</style>
+
+
+.crtnum{width: 40px;
+        text-align: center;}
+
+
+.place{display: block;
+       width:100%;
+       height: 60px;}
+
+
+
+
+.hidden{display: none !important;} 
+     </style>
 </head>
 <body>
     <div>
